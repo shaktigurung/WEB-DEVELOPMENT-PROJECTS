@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Spinners</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <div class="main">
+       <h1>Hello, Welcome to my Website</h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tempore corrupti, error iure illo aspernatur veniam doloribus repudiandae explicabo laboriosam magnam ex tempora dolore adipisci harum soluta iusto. Neque, adipisci!</p>
+   </div> 
+   
+   <script>
+     document.querySelector('.main p').style.display='none';
+    document.querySelector('.main').classList.add('spinner-1');
+    
+       //Mimic Server request
+    setTimeout(()=>{
+     document.querySelector('.main').classList.remove('spinner-1');
+     document.querySelector('.main p').style.display='block';
+    }, 3000);
+   </script>
+</body>
+</html>
